@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="./src/css/style.css">
 
+    <link rel="stylesheet" href="./src/css/mediaquery.css">
+
     <title>Frontend Mentor | Article preview component</title>
 
 </head>
@@ -21,46 +23,40 @@
             <figure class="img-principal">
                 <img src="src/images/drawers.jpg" alt="Drawers">
             </figure>
-            <article>
-                <h1>
-                    Shift the overall look and feel by adding these wonderful
-                    touches to furniture in your home
-                </h1>
-                <p class="gray">
-                    Ever been in a room and felt like something was missing? Perhaps
-                    it felt slightly bare and uninviting. I’ve got some simple tips
-                    to help you make any room feel complete.
-                </p>
-            </article>
-
-            <div class="share-1">
-                <img src="src/images/avatar-michelle.jpg" alt="">
-                <div class="txt">
-                    <p class="michelle">Michelle Appleton</p>
-                    <p class="gray">28 Jun 2020</p>
-                </div>
-                <button class="btn-share" onclick="share()">
-                    <img src="src/images/icon-share.svg" alt="">
-                </button>
-
-            </div>
-
-            <div class="share-2">
-                <div class="share-group">
-                    <p>Share</p>
-                    <button class="btn2-share" onclick="share2()">
+            <div class="box-content">
+                <article>
+                    <h1>
+                        Shift the overall look and feel by adding these wonderful
+                        touches to furniture in your home
+                    </h1>
+                    <p class="gray">
+                        Ever been in a room and felt like something was missing? Perhaps
+                        it felt slightly bare and uninviting. I’ve got some simple tips
+                        to help you make any room feel complete.
+                    </p>
+                </article>
+                <div class="share first">
+                    <img src="src/images/avatar-michelle.jpg" alt="">
+                    <div class="txt">
+                        <p class="michelle">Michelle Appleton</p>
+                        <p class="gray">28 Jun 2020</p>
+                    </div>
+                    <button class="btn-share" onclick="share()">
                         <img src="src/images/icon-share.svg" alt="">
                     </button>
                 </div>
-
-                <div class="social-medias">
-                    <img src="src/images/icon-facebook.svg" alt="">
-                    <img src="src/images/icon-twitter.svg" alt="">
-                    <img src="src/images/icon-pinterest.svg" alt="">
+                <div class="share hidden">
+                    <p>Share</p>
+                    <div class="social-medias">
+                        <a href=""><img src="src/images/icon-facebook.svg" alt=""></a>
+                        <a href=""><img src="src/images/icon-twitter.svg" alt=""></a>
+                        <a href=""><img src="src/images/icon-pinterest.svg" alt=""></a>
+                    </div>
+                    <button class="btn-share arrow" onclick="share2()">
+                        <img src="src/images/icon-share.svg" alt="">
+                    </button>
                 </div>
             </div>
-
-
         </section>
     </main>
 

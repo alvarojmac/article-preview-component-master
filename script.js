@@ -1,14 +1,16 @@
-let shareBtn = document.querySelector('.share-1');
-let socialMedia = document.querySelector('.share-2');
+let shareFirst = document.querySelector('.first');
+let socialMedia = document.querySelector('.hidden');
+let btn = document.querySelector('.btn-share')
 
 
 function share() {
-    shareBtn.style.display = 'none'
+    shareFirst.style.display = 'none'
     socialMedia.style.display = 'flex'
-
+    socialMedia.style.backgroundColor = '#48556a'
 }
 
 function share2() {
-    shareBtn.style.display = 'flex'
+    shareFirst.style.display = 'flex'
     socialMedia.style.display = 'none'
+    socialMedia.style.backgroundColor = '#FFF'
 }
